@@ -10,13 +10,23 @@ TODO: Add a description of the plugin.
 Add lita-asknicely to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-asknicely"
+gem 'lita-asknicely'
 ```
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+Add the following to your Lita configuration:
+
+```
+config.handlers.asknicely.domain = 'yourdomain'
+config.handlers.asknicely.api_key = 'yourapikey'
+```
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+Examples:
+
+```
+nps   - Show the NPS for the last 30 days
+nps [0-30] - Show the NPS for the last specified number of days
+```
