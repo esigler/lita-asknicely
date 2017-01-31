@@ -1,0 +1,7 @@
+Documentation:
+  Exclude:
+    - lib/lita/handlers/asknicely.rb
+
+FileName:
+  Exclude:
+    - lib/lita-asknicely.rb
