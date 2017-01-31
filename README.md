@@ -1,9 +1,13 @@
 # lita-asknicely
 
-[![Build Status](https://travis-ci.org/esigler/lita-asknicely.png?branch=master)](https://travis-ci.org/esigler/lita-asknicely)
-[![Coverage Status](https://coveralls.io/repos/esigler/lita-asknicely/badge.png)](https://coveralls.io/r/esigler/lita-asknicely)
+[![Build Status](https://img.shields.io/travis/esigler/lita-asknicely/master.svg)](https://travis-ci.org/esigler/lita-asknicely)
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://tldrlegal.com/license/mit-license)
+[![RubyGems](http://img.shields.io/gem/v/lita-asknicely.svg)](https://rubygems.org/gems/lita-asknicely)
+[![Coveralls Coverage](https://img.shields.io/coveralls/esigler/lita-asknicely/master.svg)](https://coveralls.io/r/esigler/lita-asknicely)
+[![Code Climate](https://img.shields.io/codeclimate/github/esigler/lita-asknicely.svg)](https://codeclimate.com/github/esigler/lita-asknicely)
+[![Gemnasium](https://img.shields.io/gemnasium/esigler/lita-asknicely.svg)](https://gemnasium.com/esigler/lita-asknicely)
 
-TODO: Add a description of the plugin.
+A Asknice.ly plugin for Lita
 
 ## Installation
 

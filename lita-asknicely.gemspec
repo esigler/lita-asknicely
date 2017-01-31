@@ -3,7 +3,7 @@ Gem::Specification.new do |spec|
   spec.version       = '0.1.0'
   spec.authors       = ['Eric Sigler']
   spec.email         = ['me@esigler.com']
-  spec.description   = 'An Asknice.ly plugin for Lita'
+  spec.description   = 'A Asknice.ly plugin for Lita'
   spec.summary       = spec.description
   spec.homepage      = 'https://github.com/esigler/lita-asknicely'
   spec.license       = 'MIT'
