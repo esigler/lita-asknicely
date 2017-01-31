@@ -1,6 +1,9 @@
 module Lita
   module Handlers
     class Asknicely < Handler
+      config :domain, type: String, required: true
+      config :api_key, type: String, required: true
+
       route(
         /^nps
         (\s(?<days>\d+))?
@@ -24,8 +27,20 @@ module Lita
       private
 
       def fetch_score(days)
-        # CACHE
-        62.5
+        # TODO: Cache results for 60 seconds
+        url = "https://#{config.domain}.asknice.ly/api/v1/getnps/#{days}"
+        url += "?X-apikey=#{config.api_key}"
+
+        response = http.get(url)
+
+        if response.status != 200
+          Lita.logger.error("Received error from Asknice.ly: #{http_response}")
+
+          # TODO: Consider a more user friendly error
+          return -100
+        end
+
+        MultiJson.load(response.body)['NPS']
       end
 
       Lita.register_handler(self)
